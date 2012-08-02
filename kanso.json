@@ -1,0 +1,26 @@
+{
+    "name": "substrate_explorer",
+    "version": "0.0.1",
+    "description": "explorer couchapp for substrate",
+    "attachments": ["index.html", "static"],
+	"load": "lib/app",
+	"modules": "lib",
+    "handlebars": {
+        "all_partials": true,
+        "templates": "templates"
+    },
+    "less": {
+        "compress": true,
+        "compile": ["static/css/base.less"],
+        "remove_from_attachments": true
+    },
+    "dependencies": {
+        "attachments": null,
+        "less-precompiler": null,
+        "bootstrap": null,
+        "handlebars": null,
+		"handlebars-helpers":null,
+		"jquery" : null,
+		"modules" : null
+    }
+}

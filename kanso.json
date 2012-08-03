@@ -20,6 +20,7 @@
         "bootstrap": null,
         "handlebars": null,
 		"handlebars-helpers":null,
+		"properties":null,
 		"jquery" : null,
 		"modules" : null
     }

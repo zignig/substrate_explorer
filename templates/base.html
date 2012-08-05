@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="static/css/base.css" rel="stylesheet">
+    <link href="{{baseURL}}/static/css/base.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -21,7 +21,7 @@
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="{{baseURL}}/http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <!-- Le fav and touch icons -->
@@ -84,7 +84,7 @@
       </footer>
 
     </div><!--/.fluid-container-->
-   <script type="text/javascript" src="{{baseURL}}modules.js"></script>
+   <script type="text/javascript" src="{{baseURL}}/{{baseURL}}modules.js"></script>
     <script type="text/javascript">
       // so the jquery plugins below work
       window.$ = window.jQuery = require('jquery');
@@ -92,20 +92,20 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="bootstrap/js/bootstrap-transition.js"></script>
-    <script src="bootstrap/js/bootstrap-alert.js"></script>
-    <script src="bootstrap/js/bootstrap-modal.js"></script>
-    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
-    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
-    <script src="bootstrap/js/bootstrap-tab.js"></script>
-    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
-    <script src="bootstrap/js/bootstrap-popover.js"></script>
-    <script src="bootstrap/js/bootstrap-button.js"></script>
-    <script src="bootstrap/js/bootstrap-collapse.js"></script>
-    <script src="bootstrap/js/bootstrap-carousel.js"></script>
-    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="{{baseURL}}/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="{{baseURL}}/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="{{baseURL}}/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="{{baseURL}}/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="{{baseURL}}/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="{{baseURL}}/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="{{baseURL}}/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="{{baseURL}}/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="{{baseURL}}/bootstrap/js/bootstrap-button.js"></script>
+    <script src="{{baseURL}}/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="{{baseURL}}/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="{{baseURL}}/bootstrap/js/bootstrap-typeahead.js"></script>
     {{#each scripts}}
-    <script type="text/javascript" src="{{../baseURL}}{{this}}"></script>
+    <script type="text/javascript" src="{{baseURL}}/{{../baseURL}}{{this}}"></script>
     {{/each}}
 
   </body>

@@ -24,6 +24,7 @@
         "handlebars": null,
 		"handlebars-helpers":null,
 		"duality-handlebars":null,
+		"duality":null,
 		"properties":null,
 		"jquery" : null,
 		"modules" : null,

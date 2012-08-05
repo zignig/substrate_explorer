@@ -4,6 +4,9 @@
     "description": "explorer couchapp for substrate",
     "attachments": ["index.html", "static"],
 	"load": "lib/app",
+	"duality": {
+		"base_template" : "base.html"
+	},
 	"modules": "lib",
     "handlebars": {
         "all_partials": true,
@@ -20,8 +23,11 @@
         "bootstrap": null,
         "handlebars": null,
 		"handlebars-helpers":null,
+		"duality-handlebars":null,
 		"properties":null,
 		"jquery" : null,
-		"modules" : null
+		"modules" : null,
+		"jsonp" : null,
+		"underscore" : null
     }
 }

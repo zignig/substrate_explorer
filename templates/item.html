@@ -1,9 +1,11 @@
-<ul class="thumbnails">
   {{#each items}}
-    <li class="span3">
-      <a class="thumbnail" href="{{../baseURL}}/display/{{this.id}}"><img height=120 width=160 src="{{../baseURL}}/doc/{{this.id}}/{{this.thumb}}"></img><br> </a>
+	<div class="span2">
+	  {{#if thumb}}
+      <a href="{{../baseURL}}/display/{{this.id}}"><img class="thumbnail" height=120 width=160 src="{{../baseURL}}/doc/{{this.id}}/{{this.thumb}}"></img></a>
+	  {{else}}
+      <a href="{{../../baseURL}}/display/{{this.id}}"><img class="thumbnail" height=120 width=160 src="{{../../baseURL}}/static/img/new.png"></img></a>
+	  {{/if}}
       <a class='small' href="{{../baseURL}}/display/{{this.id}}">{{name}}</a>
-    </li>
+      <a class='small' href="{{../baseURL}}/author/{{author}}">{{author}}</a>
+	</div>
   {{/each}}
-</ul>
-

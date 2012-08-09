@@ -1,0 +1,26 @@
+<h1>{{name}}</h1>
+<p>
+{{#if author}} by <a href="{{baseURL}}/author/{{author}}">{{author}}</a>{{/if}}
+{{#if thumb}}
+<div class="span3">
+<a class="thumbnail" href="{{baseURL}}/display/{{_id}}">
+	<img height=120 width=160 src="{{baseURL}}/doc/{{_id}}/{{thumb}}"></img><br>
+</a>
+</div>
+{{/if}}
+<br>
+{{#if tags}}
+<div class="btn-group">
+{{#each tags}}
+	<a class="btn" href="{{baseURL}}/tag/{{this}}">{{this}}</a>
+{{/each}}
+</div>
+{{/if}}
+<p>
+{{#if thumb_url}}
+<div class="thumbnail">
+	<img height=120 width=160 src="{{thumb_url}}"></img><br>
+</div>
+{{/if}}
+<hr>
+{{#if url}} <a href="{{url}}">{{url}}</a>{{/if}}

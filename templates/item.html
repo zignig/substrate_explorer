@@ -1,5 +1,6 @@
+<div>
   {{#each items}}
-	<div class="span3">
+	<div class="col1">
 	  {{#if thumb}}
       <a href="{{../../baseURL}}/display/{{this.id}}"><img class="thumbnail" height=120 width=160 src="{{../../baseURL}}/doc/{{this.id}}/{{this.thumb}}"></img></a>
 	  {{else}}
@@ -9,3 +10,4 @@
       <a class='small' href="{{../baseURL}}/author/{{author}}">{{author}}</a>
 	</div>
   {{/each}}
+</div>

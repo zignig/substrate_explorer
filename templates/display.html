@@ -1,18 +1,18 @@
 <h1>{{name}}</h1>
 <p>
 {{#if author}} by <a href="{{baseURL}}/author/{{author}}">{{author}}</a>{{/if}}
-{{#if thumb}}
-<a class="thumbnail" href="{{baseURL}}/display/{{_id}}">
-	<img height=120 width=160 src="{{baseURL}}/doc/{{_id}}/{{thumb}}"></img><br>
-</a>
-{{/if}}
-<br>
-{{#if tags}}
 <div class="btn-group">
 {{#each tags}}
 	<a class="btn" href="{{baseURL}}/tag/{{this}}">{{this}}</a>
 {{/each}}
-</div>
+</div><br>
+{{#if thumb}}
+<a class="thumbnail" href="{{baseURL}}/display/{{_id}}">
+	<img height=320 width=240 src="{{baseURL}}/doc/{{_id}}/{{thumb}}"></img><br>
+</a>
+{{/if}}
+<br>
+{{#if tags}}
 {{/if}}
 <p>
 {{#if thumb_url}}

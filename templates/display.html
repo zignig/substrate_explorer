@@ -2,11 +2,9 @@
 <p>
 {{#if author}} by <a href="{{baseURL}}/author/{{author}}">{{author}}</a>{{/if}}
 {{#if thumb}}
-<div class="span3">
 <a class="thumbnail" href="{{baseURL}}/display/{{_id}}">
 	<img height=120 width=160 src="{{baseURL}}/doc/{{_id}}/{{thumb}}"></img><br>
 </a>
-</div>
 {{/if}}
 <br>
 {{#if tags}}
@@ -21,6 +19,14 @@
 <div class="thumbnail">
 	<img height=120 width=160 src="{{thumb_url}}"></img><br>
 </div>
+{{/if}}
+<hr>
+{{#if att}}
+<ul>
+{{#each att}}
+<li> <a href="{{this.base}}/doc/{{this.id}}/{{this.name}}">{{this.name}}</a> </li>
+{{/each}}
+</ul>
 {{/if}}
 <hr>
 {{#if url}} <a href="{{url}}">{{url}}</a>{{/if}}
